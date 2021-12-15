@@ -1,10 +1,10 @@
 from director import vtkAll as vtk
-import PythonQt
+import PyQt4
 
 class ImageView(object):
 
     def __init__(self):
-        self.view = PythonQt.dd.ddQVTKWidgetView()
+        self.view = PyQt4.dd.ddQVTKWidgetView()
         self.view.setWindowTitle('Image View')
         self.imageActor = vtk.vtkImageActor()
         self.setImage(vtk.vtkImageData())
